@@ -12,6 +12,10 @@ $(call inherit-product, device/amlogic/g12-common/g12.mk)
 PRODUCT_HOST_PACKAGES += \
     aml_image_packer
 
-## Init-Files
+# Inherit temp DNM configuration
+$(call inherit-product, $(LOCAL_PATH)/temp.mk)
+
+# Wi-Fi
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/init-files/init.amlogic.wifi_buildin.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi_buildin.rc
+    $(LOCAL_PATH)/configs/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+    $(LOCAL_PATH)/configs/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
