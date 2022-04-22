@@ -6,10 +6,10 @@
 
 include device/amlogic/g12-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/amlogic/x96w
+DEVICE_PATH := device/amlogic/q6x
 
 ## Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := x96w
+TARGET_BOOTLOADER_BOARD_NAME := q6x
 
 ## Kernel
 TARGET_DTB_NAME := gxl_p281_1g gxl_p281_2g

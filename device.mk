@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/amlogic/x96w
+DEVICE_PATH := device/amlogic/q6x
 
 $(call inherit-product, device/amlogic/g12-common/g12.mk)
 

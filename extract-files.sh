@@ -14,7 +14,7 @@ fi
 
 set -e
 
-export DEVICE=x96w
+export DEVICE=q6x
 export DEVICE_COMMON=g12-common
 export VENDOR_COMMON=amlogic
 export VENDOR_DEVICE=amlogic
