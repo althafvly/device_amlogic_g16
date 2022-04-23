@@ -43,3 +43,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vendor/keylayout/Vendor_1689_Product_fd01.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_1689_Product_fd01.kl \
     $(LOCAL_PATH)/vendor/keylayout/Vendor_1bad_Product_f023.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_1bad_Product_f023.kl \
     $(LOCAL_PATH)/vendor/keylayout/Vendor_2378_Product_100a.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_2378_Product_100a.kl
+
+# Multiwifi
+include hardware/amlogic/wifi/configs/wifi.mk

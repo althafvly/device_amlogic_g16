@@ -16,3 +16,6 @@ TARGET_DTB_NAME := gxl_p281_1g gxl_p281_2g
 
 # SEPolicy (ew)
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
+# Wi-Fi
+WIFI_MODULE := multiwifi
