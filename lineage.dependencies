@@ -6,4 +6,9 @@
   {
     "repository": "android_hardware_amlogic_wifi",
     "target_path": "hardware/amlogic/wifi"
+  },
+  {
+    "repository": "android_hardware_wifi_icomm_drivers_ssv6xxx",
+    "target_path": "hardware/wifi/icomm/drivers/ssv6xxx"
+  }
 ]
