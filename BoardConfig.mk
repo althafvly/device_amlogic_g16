@@ -20,9 +20,3 @@ MALI_DRV_VERSION := r10p1
 ## Kernel
 TARGET_DTB_NAME := gxl_p281_1g gxl_p281_2g
 TARGET_KERNEL_CONFIG := gxl_defconfig
-
-# SEPolicy (ew)
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-
-# Wi-Fi
-WIFI_MODULE := multiwifi
