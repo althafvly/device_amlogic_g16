@@ -1,0 +1,9 @@
+#
+# Copyright (C) 2022 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+## Wi-Fi
+wifi.interface=wlan0
+wifi.direct.interface=p2p0
