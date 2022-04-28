@@ -1,0 +1,2 @@
+on boot
+    insmod /vendor/lib/modules/ssv6051.ko ifname=wlan0 if2name=p2p0
