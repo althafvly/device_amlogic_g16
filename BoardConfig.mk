@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-include device/amlogic/g12-common/BoardConfigCommon.mk
+include device/amlogic/gx-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/amlogic/q6x
 
