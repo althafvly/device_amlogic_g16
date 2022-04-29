@@ -18,7 +18,7 @@ MALI_GPU_VARIANT := utgard
 MALI_DRV_VERSION := r10p1
 
 ## Kernel
-TARGET_DTB_NAME := gxl_p281_1g gxl_p281_2g
+TARGET_DTB_NAME := gxl_p281_1g_q6x gxl_p281_2g_q6x
 TARGET_KERNEL_CONFIG := gxl_defconfig
 
 ## Properties
