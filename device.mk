@@ -6,6 +6,7 @@
 
 DEVICE_PATH := device/amlogic/q6x
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/go_defaults_common.mk)
 $(call inherit-product, device/amlogic/gx-common/gx.mk)
 
 ## Factory
