@@ -11,6 +11,9 @@ DEVICE_PATH := device/amlogic/q6x
 ## Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := q6x
 
+## GPU
+TARGET_AMLOGIC_GPU_ARCH := utgard
+
 ## Kernel
 TARGET_DTB_NAME := gxl_p281_1g gxl_p281_2g
 
