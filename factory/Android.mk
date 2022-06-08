@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-FACTORY_PATH := device/amlogic/q6x/factory
+FACTORY_PATH := device/amlogic/g16/factory
 
 PRODUCT_UPGRADE_OUT := $(PRODUCT_OUT)/upgrade
 PACKAGE_CONFIG_FILE := $(PRODUCT_UPGRADE_OUT)/image.cfg
@@ -28,14 +28,14 @@ NEEDED_IMAGES := \
 
 $(INSTALLED_AML_UPGRADE_PACKAGE_TARGET): $(addprefix $(PRODUCT_OUT)/,$(NEEDED_IMAGES)) $(AML_IMAGE_TOOL)
 	$(hide) mkdir -p $(PRODUCT_UPGRADE_OUT)
-ifeq ("$(wildcard $(FACTORY_PATH)/u-boot.bin)","")
+ifeq ("$(wildcard $(FACTORY_PATH)/bootloader.img)","")
 	$(error "no u-boot.bin found in $(FACTORY_PATH)")
 else
-	$(hide) $(call aml-symlink-file, $(FACTORY_PATH)/u-boot.bin)
+	$(hide) $(call aml-symlink-file, $(FACTORY_PATH)/bootloader.img)
 endif
-	$(hide) $(call aml-symlink-file, $(FACTORY_PATH)/u-boot.bin.sd.bin)
-	$(hide) $(call aml-symlink-file, $(FACTORY_PATH)/u-boot.bin.usb.bl2)
-	$(hide) $(call aml-symlink-file, $(FACTORY_PATH)/u-boot.bin.usb.tpl)
+	$(hide) $(call aml-symlink-file, $(FACTORY_PATH)/aml_sdc_burn.img)
+	$(hide) $(call aml-symlink-file, $(FACTORY_PATH)/ddr.img)
+	$(hide) $(call aml-symlink-file, $(FACTORY_PATH)/uboot.img)
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/logo.img)
 	$(hide) $(call aml-symlink-file, $(FACTORY_PATH)/aml_sdc_burn.ini)
 	$(hide) $(call aml-symlink-file, $(FACTORY_PATH)/image.cfg)
