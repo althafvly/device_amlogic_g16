@@ -4,9 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/amlogic/q6x
+LOCAL_PATH := device/amlogic/g16
 
-ifeq ($(TARGET_DEVICE), q6x)
+ifeq ($(TARGET_DEVICE), g16)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

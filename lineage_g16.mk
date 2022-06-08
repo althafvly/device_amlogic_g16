@@ -17,11 +17,11 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_BRAND := DroidLogic
-PRODUCT_DEVICE := q6x
+PRODUCT_DEVICE := g16
 PRODUCT_GMS_CLIENTID_BASE := android-askey-tv
 PRODUCT_MANUFACTURER := DroidLogic
-PRODUCT_MODEL := q6x
-PRODUCT_NAME := lineage_q6x
+PRODUCT_MODEL := g16
+PRODUCT_NAME := lineage_g16
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=adt3 \

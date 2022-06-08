@@ -4,11 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/amlogic/q6x
+DEVICE_PATH := device/amlogic/g16
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/go_defaults_common.mk)
 
-$(call inherit-product, vendor/amlogic/q6x/q6x-vendor.mk)
+$(call inherit-product, vendor/amlogic/g16/g16-vendor.mk)
 
 $(call inherit-product, device/amlogic/gx-common/gx.mk)
 

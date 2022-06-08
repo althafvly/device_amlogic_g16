@@ -6,16 +6,16 @@
 
 include device/amlogic/gx-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/amlogic/q6x
+DEVICE_PATH := device/amlogic/g16
 
 ## Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := q6x
+TARGET_BOOTLOADER_BOARD_NAME := g16
 
 ## GPU
 TARGET_AMLOGIC_GPU_ARCH := utgard
 
 ## Kernel
-TARGET_DTB_NAME := gxl_p281_1g gxl_p281_2g
+TARGET_DTB_NAME := gxl_p212_1g gxl_p212_2g
 
 ## Partitions
 BOARD_PRODUCTIMAGE_PARTITION_SIZE := 134217728
