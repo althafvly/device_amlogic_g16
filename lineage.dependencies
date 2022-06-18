@@ -4,7 +4,11 @@
     "target_path": "device/amlogic/gx-common"
   },
   {
-    "repository": "android_hardware_wifi_icomm_drivers_ssv6xxx",
-    "target_path": "hardware/wifi/icomm/drivers/ssv6xxx"
+    "repository": "android_hardware_amlogic_kernel-modules_rtl8822bs",
+    "target_path": "hardware/amlogic/kernel-modules/rtl8822bs"
+  },
+  {
+    "repository": "android_hardware_realtek",
+    "target_path": "hardware/realtek"
   }
 ]

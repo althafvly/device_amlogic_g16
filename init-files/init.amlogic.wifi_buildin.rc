@@ -1,2 +1,2 @@
 on boot
-    insmod /vendor/lib/modules/ssv6051.ko stacfgpath=/vendor/etc/wifi/ssv6051/ssv6051-wifi.cfg
+    insmod /vendor/lib/modules/8822bs.ko ifname=wlan0 if2name=p2p0

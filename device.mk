@@ -8,8 +8,9 @@ DEVICE_PATH := device/amlogic/g16
 
 $(call inherit-product, vendor/amlogic/g16/g16-vendor.mk)
 
-## Bluetooth (or lack thereof)
-TARGET_HAVE_BLUETOOTH := false
+## Bluetooth
+BOARD_HAVE_BLUETOOTH_RTK_TV := true
+include hardware/realtek/rtkbt/rtkbt.mk
 
 ## Factory
 PRODUCT_HOST_PACKAGES += \
@@ -18,17 +19,16 @@ PRODUCT_HOST_PACKAGES += \
 ## Platform
 TARGET_AMLOGIC_SOC := gxl
 
-# Wi-Fi
-PRODUCT_CFI_INCLUDE_PATHS += \
-    hardware/amlogic/kernel-modules/icomm/wpa_supplicant_8_lib
+## Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay
 
+## Kernel Modules
 PRODUCT_PACKAGES += \
-    ssv6051
+    8822bs
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init-files/init.amlogic.wifi_buildin.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi_buildin.rc \
-    hardware/amlogic/kernel-modules/icomm/ssv6051/ssv6051-wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/ssv6051/ssv6051-wifi.cfg \
-    hardware/amlogic/kernel-modules/icomm/ssv6051/image/ssv6051-sw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/ssv6051/ssv6051-sw.bin
+    $(LOCAL_PATH)/init-files/init.amlogic.wifi_buildin.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi_buildin.rc
 
 ## Common Tree
 $(call inherit-product, device/amlogic/gx-common/gx.mk)
