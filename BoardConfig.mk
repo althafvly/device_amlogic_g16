@@ -9,6 +9,8 @@ DEVICE_PATH := device/amlogic/g16
 ## Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := g16
 
+TARGET_BOARD_PLATFORM := gxl
+
 ## Bluetooth (or lack thereof)
 BOARD_HAVE_BLUETOOTH := false
 
