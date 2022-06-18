@@ -14,6 +14,9 @@ TARGET_BOARD_PLATFORM := gxl
 ## Bluetooth (or lack thereof)
 BOARD_HAVE_BLUETOOTH := false
 
+# GPU
+TARGET_AMLOGIC_GPU_ARCH := utgard
+
 ## Kernel
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_DTB_NAME := gxl_p212_1g gxl_p212_2g
