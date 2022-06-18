@@ -4,9 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/amlogic/q6x
+DEVICE_PATH := device/amlogic/g16
 
-$(call inherit-product, vendor/amlogic/q6x/q6x-vendor.mk)
+$(call inherit-product, vendor/amlogic/g16/g16-vendor.mk)
 
 ## Bluetooth (or lack thereof)
 TARGET_HAVE_BLUETOOTH := false

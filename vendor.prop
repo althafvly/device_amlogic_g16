@@ -14,4 +14,4 @@ debug.renderengine.backend=gles
 debug.hwui.use_buffer_age=false
 
 ## SOC
-ro.soc.model=AMLS905W
+ro.soc.model=AMLS905X

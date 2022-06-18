@@ -4,16 +4,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/amlogic/q6x
+DEVICE_PATH := device/amlogic/g16
 
 ## Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := q6x
+TARGET_BOOTLOADER_BOARD_NAME := g16
 
 ## Bluetooth (or lack thereof)
 BOARD_HAVE_BLUETOOTH := false
 
 ## Kernel
-TARGET_DTB_NAME := gxl_p281_1g gxl_p281_2g
+TARGET_DTB_NAME := gxl_p212_1g gxl_p212_2g
 
 ## Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop

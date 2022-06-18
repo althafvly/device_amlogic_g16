@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-FACTORY_PATH := device/amlogic/q6x/factory
+FACTORY_PATH := device/amlogic/g16/factory
 
 PRODUCT_UPGRADE_OUT := $(PRODUCT_OUT)/upgrade
 PACKAGE_CONFIG_FILE := $(PRODUCT_UPGRADE_OUT)/image.cfg
