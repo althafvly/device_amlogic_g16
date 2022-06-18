@@ -13,6 +13,7 @@ TARGET_BOOTLOADER_BOARD_NAME := g16
 BOARD_HAVE_BLUETOOTH := false
 
 ## Kernel
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_DTB_NAME := gxl_p212_1g gxl_p212_2g
 
 ## Properties
