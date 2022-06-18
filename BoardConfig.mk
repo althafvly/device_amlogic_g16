@@ -7,7 +7,7 @@
 DEVICE_PATH := device/amlogic/g16
 
 ## Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := g16
+TARGET_BOOTLOADER_BOARD_NAME := gxl_p212
 
 TARGET_BOARD_PLATFORM := gxl
 
@@ -20,6 +20,9 @@ TARGET_DTB_NAME := gxl_p212_1g gxl_p212_2g
 
 ## Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
+# SOC
+TARGET_AMLOGIC_SOC := gxl
 
 ## Wi-Fi
 BOARD_WLAN_DEVICE := realtek

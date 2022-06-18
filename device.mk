@@ -16,9 +16,6 @@ include hardware/realtek/rtkbt/rtkbt.mk
 PRODUCT_HOST_PACKAGES += \
     aml_image_packer
 
-## Platform
-TARGET_AMLOGIC_SOC := gxl
-
 ## Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay

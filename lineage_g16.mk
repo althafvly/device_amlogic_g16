@@ -4,13 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-TARGET_HAS_TEE := false
-
 # Inherit some common AOSP stuff
 $(call inherit-product, device/google/atv/products/atv_base.mk)
-
-# Inherit lowram configs
-$(call inherit-product, device/google/atv/products/atv_lowram_defaults.mk)
 
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_tv.mk)
@@ -21,7 +16,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 ## Device identifier. This must come after all inclusions
 PRODUCT_BRAND := DroidLogic
 PRODUCT_DEVICE := g16
-PRODUCT_GMS_CLIENTID_BASE := android-askey-tv
+PRODUCT_GMS_CLIENTID_BASE := android-google-tv
 PRODUCT_MANUFACTURER := DroidLogic
 PRODUCT_MODEL := g16
 PRODUCT_NAME := lineage_g16
