@@ -23,6 +23,7 @@ NEEDED_IMAGES := \
     vbmeta.img \
     odm.img \
     system.img \
+    product.img \
     vendor.img
 
 $(INSTALLED_AML_UPGRADE_PACKAGE_TARGET): $(addprefix $(PRODUCT_OUT)/,$(NEEDED_IMAGES)) $(AML_IMAGE_TOOL)
@@ -45,6 +46,7 @@ endif
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/dtbo.img)
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/odm.img)
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/system.img)
+	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/product.img)
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/vendor.img)
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/vbmeta.img)
 	$(hide) $(AML_IMAGE_TOOL) -r $(PACKAGE_CONFIG_FILE) $(PRODUCT_UPGRADE_OUT)/ $@
